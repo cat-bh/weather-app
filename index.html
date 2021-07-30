@@ -26,25 +26,25 @@
 
         <div class="flex grid grid-cols-4 h-4/5">
             <div class="col-span-4 md:col-span-1 search-bar p-2">
-                <form class="text-center md:grid md:grid-rows-3">
+                <form class="text-center md:grid md:grid-rows-3 location-search">
                     <label for="city">Search for a city:</label>
-                    <input type="text" name="city"/>
+                    <input type="text" name="city" id="location"/>
                     <button type="sumbit">Search</button>
                 </form>
                 
             </div>
             <div class="col-span-4 md:col-span-3 p-3 grid gid-rows-2 gap-4 weather-forecast">
                 <!-- Today's Weather -->
-                <div class="box">
+                <div class="box today" data-day="0">
                     <h2>
                         Today <span class="todays-date"></span>: <span class="location">Search for a location</span> 
                         <span class="icon"></span>
                     </h2>
                     icon
-                    <p>Temp: <span class="temp"></span></p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
-                    <p>UV Index: </p>
+                    <p>Temp: <span class="temp">--</span>&#8457</p>
+                    <p>Wind: <span class="wind">--</span> mph</p>
+                    <p>Humidity: <span class="humid">--</span>%</p>
+                    <p>UV Index: <span class="uvi">--</span></p>
                     
                 </div>
                 
@@ -55,45 +55,45 @@
                     <div class="box future" data-day="1">
                         <h3 class="day">Day</h3>
                         <div>icon</div>
-                        <p>Temp: <span class="temp"></span></p>
-                        <p>Wind: <span class="wind"></span></p>
-                        <p>Humidity: <span class="humid"></span></p>
+                        <p>Temp: <span class="temp">--</span>&#8457</p>
+                        <p>Wind: <span class="wind">--</span> MPH</p>
+                        <p>Humidity: <span class="humid">--</span>%</p>
 
                     </div>
 
                     <div class="box future" data-day="2">
                         <h3 class="day">Day</h3>
                         <div>icon</div>
-                        <p>Temp: <span class="temp"></span></p>
-                        <p>Wind: <span class="wind"></span></p>
-                        <p>Humidity: <span class="humid"></span></p>
+                        <p>Temp: <span class="temp">--</span>&#8457</p>
+                        <p>Wind: <span class="wind">--</span> MPH</p>
+                        <p>Humidity: <span class="humid">--</span>%</p>
 
                     </div>
 
                     <div class="box future" data-day="3">
                         <h3 class="day">Day</h3>
                         <div>icon</div>
-                        <p>Temp: <span class="temp"></span></p>
-                        <p>Wind: <span class="wind"></span></p>
-                        <p>Humidity: <span class="humid"></span></p>
+                        <p>Temp: <span class="temp">--</span>&#8457</p>
+                        <p>Wind: <span class="wind">--</span> MPH</p>
+                        <p>Humidity: <span class="humid">--</span>%</p>
 
                     </div>
 
                     <div class="box future" data-day="4">
                         <h3 class="day">Day</h3>
                         <div>icon</div>
-                        <p>Temp: <span class="temp"></span></p>
-                        <p>Wind: <span class="wind"></span></p>
-                        <p>Humidity: <span class="humid"></span></p>
+                        <p>Temp: <span class="temp">--</span>&#8457</p>
+                        <p>Wind: <span class="wind">--</span> MPH</p>
+                        <p>Humidity: <span class="humid">--</span>%</p>
 
                     </div>
 
                     <div class="box future" data-day="5">
                         <h3 class="day">Day</h3>
                         <div>icon</div>
-                        <p>Temp: <span class="temp"></span></p>
-                        <p>Wind: <span class="wind"></span></p>
-                        <p>Humidity: <span class="humid"></span></p>
+                        <p>Temp: <span class="temp">--</span>&#8457</p>
+                        <p>Wind: <span class="wind">--</span>MPH</p>
+                        <p>Humidity: <span class="humid">--</span>%</p>
 
                     </div>
 
