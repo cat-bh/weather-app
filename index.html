@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="h-screen">
+
+
+        <header class="h-1/5 text-center">
+            <h1>Weather</h1>
+        </header>
+
+        <div class="flex grid grid-cols-4 h-4/5">
+            <div class="col-span-4 md:col-span-1 red p-2">
+                <form class="text-center md:grid md:grid-rows-3">
+                    <label for="city">Search for a city:</label>
+                    <input type="text" name="city"/>
+                    <button type="sumbit">Search</button>
+                </form>
+                
+            </div>
+            <div class="col-span-4 md:col-span-3 green p-3 grid gid-rows-2 gap-4">
+                <!-- Today's Weather -->
+                <div class="box">
+                    <h2>
+                        Today <span class="todays-date"></span>: <span class="location">Search for a location</span> 
+                    </h2>
+                </div>
+
+                <!-- 5 day forecast -->
+                <div class="grid grid-cols-5 gap-4">
+                    
+                    <div class="box">
+                        1
+                    </div>
+                    <div class="box">
+                        2
+                    </div>
+                    <div class="box">
+                        3
+                    </div>
+                    <div class="box">
+                        4
+                    </div>
+                    <div class="box">
+                        5
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--
+    <div class="row">
+        <div class="col-3">
+            
+            
+        </div>
+
+        <div class="col">
+            
+        </div>
+    </div>
+    -->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

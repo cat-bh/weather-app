@@ -1,0 +1,37 @@
+body {
+    color: white;
+    font-size: 20px;
+}
+
+.red {
+    background-color: rgb(70 88 111);
+}
+
+.green {
+    background-color: rgb(175 201 202);
+}
+
+h1 {
+    font-size: 40px;
+    padding: 10px;
+    color: rgb(4, 5, 112);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+form label {
+    font-size: 30px;
+}
+
+input {
+    color: black;
+    padding: 5px;
+}
+
+.box {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
