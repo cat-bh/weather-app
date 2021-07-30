@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Forecast</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/226c7634c5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -14,12 +20,12 @@
     <div class="h-screen">
 
 
-        <header class="h-1/5 text-center">
-            <h1>Weather</h1>
+        <header class="h-auto text-center">
+            <h1>Weather <i class="fas fa-sun"></i></h1>
         </header>
 
         <div class="flex grid grid-cols-4 h-4/5">
-            <div class="col-span-4 md:col-span-1 red p-2">
+            <div class="col-span-4 md:col-span-1 search-bar p-2">
                 <form class="text-center md:grid md:grid-rows-3">
                     <label for="city">Search for a city:</label>
                     <input type="text" name="city"/>
@@ -27,53 +33,77 @@
                 </form>
                 
             </div>
-            <div class="col-span-4 md:col-span-3 green p-3 grid gid-rows-2 gap-4">
+            <div class="col-span-4 md:col-span-3 p-3 grid gid-rows-2 gap-4 weather-forecast">
                 <!-- Today's Weather -->
                 <div class="box">
                     <h2>
                         Today <span class="todays-date"></span>: <span class="location">Search for a location</span> 
+                        <span class="icon"></span>
                     </h2>
+                    icon
+                    <p>Temp: <span class="temp"></span></p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                    <p>UV Index: </p>
+                    
                 </div>
+                
 
                 <!-- 5 day forecast -->
                 <div class="grid grid-cols-5 gap-4">
                     
-                    <div class="box">
-                        1
+                    <div class="box future" data-day="1">
+                        <h3 class="day">Day</h3>
+                        <div>icon</div>
+                        <p>Temp: <span class="temp"></span></p>
+                        <p>Wind: <span class="wind"></span></p>
+                        <p>Humidity: <span class="humid"></span></p>
+
                     </div>
-                    <div class="box">
-                        2
+
+                    <div class="box future" data-day="2">
+                        <h3 class="day">Day</h3>
+                        <div>icon</div>
+                        <p>Temp: <span class="temp"></span></p>
+                        <p>Wind: <span class="wind"></span></p>
+                        <p>Humidity: <span class="humid"></span></p>
+
                     </div>
-                    <div class="box">
-                        3
+
+                    <div class="box future" data-day="3">
+                        <h3 class="day">Day</h3>
+                        <div>icon</div>
+                        <p>Temp: <span class="temp"></span></p>
+                        <p>Wind: <span class="wind"></span></p>
+                        <p>Humidity: <span class="humid"></span></p>
+
                     </div>
-                    <div class="box">
-                        4
+
+                    <div class="box future" data-day="4">
+                        <h3 class="day">Day</h3>
+                        <div>icon</div>
+                        <p>Temp: <span class="temp"></span></p>
+                        <p>Wind: <span class="wind"></span></p>
+                        <p>Humidity: <span class="humid"></span></p>
+
                     </div>
-                    <div class="box">
-                        5
+
+                    <div class="box future" data-day="5">
+                        <h3 class="day">Day</h3>
+                        <div>icon</div>
+                        <p>Temp: <span class="temp"></span></p>
+                        <p>Wind: <span class="wind"></span></p>
+                        <p>Humidity: <span class="humid"></span></p>
+
                     </div>
 
                 </div>
-
-
             </div>
-
         </div>
 
     </div>
-    <!--
-    <div class="row">
-        <div class="col-3">
-            
-            
-        </div>
 
-        <div class="col">
-            
-        </div>
-    </div>
-    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

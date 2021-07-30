@@ -1,24 +1,37 @@
 body {
     color: white;
     font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.red {
+header {
+    background: rgb(254,255,125);
+    background: linear-gradient(70deg, rgba(254,255,125,1) 0%, rgba(55,116,131,1) 59%, rgba(27,39,117,1) 100%);
+
+}
+
+.search-bar {
     background-color: rgb(70 88 111);
 }
 
-.green {
+.weather-forecast {
     background-color: rgb(175 201 202);
 }
 
 h1 {
-    font-size: 40px;
-    padding: 10px;
-    color: rgb(4, 5, 112);
+    font-size: 50px;
+    padding: 35px;
+    font-weight: 300;
+    
 }
 
 h2 {
     font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 form label {
@@ -30,8 +43,17 @@ input {
     padding: 5px;
 }
 
+button {
+    background: rgb(254,255,125);
+    background: linear-gradient(70deg, rgba(254,255,125,1) 0%, rgba(55,116,131,1) 59%, rgba(27,39,117,1) 100%);
+    margin: 5px 0;
+}
+
+
 .box {
     border: 2px solid white;
     border-radius: 15px;
+    background-color: white;
+    color: rgb(78, 121, 121);
     padding: 10px;
 }
