@@ -60,3 +60,11 @@ button {
     color: rgb(78, 121, 121);
     padding: 10px;
 }
+
+.btn-recent {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 0;
+    background: rgb(175 201 202);
+    color: rgb(57, 80, 109);
+}

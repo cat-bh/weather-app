@@ -28,9 +28,18 @@
             <div class="col-span-4 md:col-span-1 search-bar p-2">
                 <form class="text-center md:grid md:grid-rows-3 location-search">
                     <label for="city">Search for a city:</label>
-                    <input type="text" name="city" id="location"/>
+                    <input type="text" name="city" id="location" placeholder="City name"/>
                     <button type="sumbit">Search</button>
                 </form>
+
+                <!-- Recent Searches -->
+                <div class="text-center my-1">
+                    <h3>Recent Searches</h3>
+                    <div class="recent-searches">
+                        <!-- <button class="btn-recent">Dublin</button>
+                        <button class="btn-recent">London</button> -->
+                    </div>
+                </div>
                 
             </div>
             <div class="col-span-4 md:col-span-3 p-3 grid gid-rows-2 gap-4 weather-forecast">
@@ -92,7 +101,7 @@
                         <h3 class="day">Day</h3>
                         <div class="icon"></div>
                         <p>Temp: <span class="temp">--</span>&#8457</p>
-                        <p>Wind: <span class="wind">--</span>MPH</p>
+                        <p>Wind: <span class="wind">--</span> MPH</p>
                         <p>Humidity: <span class="humid">--</span>%</p>
 
                     </div>
