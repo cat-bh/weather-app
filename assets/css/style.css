@@ -68,3 +68,8 @@ button {
     background: rgb(175 201 202);
     color: rgb(57, 80, 109);
 }
+
+.uvi {
+    padding: 2px;
+    border-radius: 7px;
+}

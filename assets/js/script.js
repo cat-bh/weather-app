@@ -46,8 +46,22 @@ var loadWeather = function (dailyWeather) {
     todayEl.find(".temp").text(todayTemp);
     todayEl.find(".wind").text(todayWind);
     todayEl.find(".humid").text(todayHumidity);
-    todayEl.find(".uvi").text(todayUvi);
     todayEl.find(".icon").html(icon);
+
+    todayEl.find(".uvi").text(todayUvi);
+
+    // Change background of uvi index based on number
+    if(todayUvi < 3) {
+        todayEl.find(".uvi").css("background-color", "green");
+    } else if (todayUvi < 6) {
+        todayEl.find(".uvi").css("background-color", "yellow");
+    } else if (todayUvi < 8) {
+        todayEl.find(".uvi").css("background-color", "orange");
+    } else if (todayUvi < 11) {
+        todayEl.find(".uvi").css("background-color", "tomato");
+    } else {
+        todayEl.find(".uvi").css("background-color", "puple");
+    }
 
     // Display future data
     $(".future").each(function() {
